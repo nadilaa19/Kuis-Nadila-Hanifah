@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+      th {
+        background-color: rgb(29, 162, 214);
+        color: white;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      a {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+    <style>
+        .fall {
+            animation: fall 0.5s forwards;
+        }
+    
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(50px); /* Menjatuhkan teks ke bawah 50px */
+                opacity: 0; /* Memudarkan teks */
+            }
+        }
+    
+        .highlight {
+            border: 2px solid orange; /* Contoh efek highlight */
+        }
+    </style>
+    
+  </head>
+  <body>
+    <div id="tableContainer"></div>
+
+    <script src="PERCOBAAN.JS"></script>
+  </body>
+</html>
